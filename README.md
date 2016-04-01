@@ -8,6 +8,26 @@
 简单来说，二分法就是令left = 0 ,right = n/2,平方根必然在0到n/2之间.  
 因为求解当n>=0,令(n/2)²=n得出n=4这确保了当n>4时，n/2的平方总是大于n的.  
 
+##337.House Robber 3
+>The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the "root." Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that "all houses in this place forms a binary tree". It will automatically contact the police if two directly-linked houses were broken into on the same night.
+Determine the maximum amount of money the thief can rob tonight without alerting the police.
+Example 1:
+     3
+    / \
+   2   3
+    \   \
+     3   1
+Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
+Example 2:
+     3
+    / \
+   4   5
+  / \   \
+ 1   3   1
+Maximum amount of money the thief can rob = 4 + 5 = 9.
+
+
+
 ##338.Counting Bits
 >Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary representation and return them as an array.
 Example:
