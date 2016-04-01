@@ -4,8 +4,7 @@
 >Implement int sqrt(int x).Compute and return the square root of x.
 
 ###解题思路
-其实就是整数版本的二分法求根号（其实计算机就是这么做的），有几点注意：  
-当n<2,return n.  
+其实就是整数版本的二分法求根号（其实计算机就是这么做的)  
 简单来说，二分法就是令left = 0 ,right = n/2,平方根必然在0到n/2之间.  
 因为求解当n>=0,令(n/2)²=n得出n=4这确保了当n>4时，n/2的平方总是大于n的.  
 
