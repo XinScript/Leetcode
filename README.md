@@ -8,6 +8,14 @@
 简单来说，二分法就是令left = 0 ,right = n/2,平方根必然在0到n/2之间.  
 因为求解当n>=0,令(n/2)²=n得出n=4这确保了当n>4时，n/2的平方总是大于n的.  
 
+##100 Same Tree
+>Given two binary trees, write a function to check if they are equal or not.
+Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+Subscribe to see which companies asked this question
+
+###解题思路
+这题没什么好说的，果断递归  
+
 ##337.House Robber 3
 >The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the "root." Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that "all houses in this place forms a binary tree". It will automatically contact the police if two directly-linked houses were broken into on the same night.
 Determine the maximum amount of money the thief can rob tonight without alerting the police.
@@ -26,6 +34,16 @@ Example 2:
  1   3   1
 Maximum amount of money the thief can rob = 4 + 5 = 9.
 
+###解题思路
+对于解决树相关的问题，首先想到的就是递归  
+因为两个相连结点不能连续偷钱，所以对于当前结点，返回抢劫和不抢劫两个状态下的所抢到的金额。只要保证这两种状态都要是当前状态的最优即可,我认为实质上这是个动态规划问题.  
+当前结点的左右子结点只要有一个已经被抢劫，当前结点就不能抢劫，只有当两个子结点都没有被抢劫的状态才能抢劫当前结点，即  
+    `rob = left.unRob + right.unRob`  
+    `unRob = max(left.unRob,left.rob)+max(right.unRob,right.rob)`  
+    `return rob,unRob`  
+
+因为OJ的固定返回格式，我使用了内嵌函数来完成递归，内嵌函数完成递归，最后外层函数返回  
+`max(rob,unRob)`
 
 
 ##338.Counting Bits
