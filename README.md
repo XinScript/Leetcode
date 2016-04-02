@@ -21,7 +21,6 @@ Subscribe to see which companies asked this question
 Determine the maximum amount of money the thief can rob tonight without alerting the police.  
 
 
-
 ###解题思路
 对于解决树相关的问题，首先想到的就是递归  
 因为两个相连结点不能连续偷钱，所以对于当前结点，返回抢劫和不抢劫两个状态下的所抢到的金额。只要保证这两种状态都要是当前状态的最优即可,我认为实质上这是个动态规划问题.  
@@ -30,7 +29,7 @@ Determine the maximum amount of money the thief can rob tonight without alerting
     `unRob = max(left.unRob,left.rob)+max(right.unRob,right.rob)`  
     `return rob,unRob`  
 
-因为OJ的固定返回格式，我使用了内嵌函数来完成递归，内嵌函数完成递归，最后外层函数返回  
+因为Leetcode的OJ固定返回格式，我使用了内嵌函数来完成递归，内嵌函数完成递归，最后外层函数返回  
 `max(rob,unRob)`
 
 
