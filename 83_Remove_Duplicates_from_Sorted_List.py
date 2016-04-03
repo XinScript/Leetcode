@@ -30,18 +30,3 @@ class Solution(object):
             return head
 
 
-l1 = ListNode(2)
-# l2 = ListNode(2)
-# l3 = ListNode(2)
-# l4 = ListNode(2)
-# l5 = ListNode(5)
-# l6 = ListNode(6)
-# l1.next = l2
-# l2.next = l3
-# l3.next = l4
-# l4.next = l5
-# l5.next = l6
-r = Solution().deleteDuplicates(l1)
-while r:
-    print(r.val)
-    r = r.next
