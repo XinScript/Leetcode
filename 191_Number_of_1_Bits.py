@@ -11,4 +11,3 @@ class Solution(object):
                 count+=1
             n = int(n/2)
         return count
-
