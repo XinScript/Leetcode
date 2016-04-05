@@ -38,12 +38,3 @@ class MinStack(object):
         """
         if self.size:
             return self.min[-1]
-#
-m = MinStack()
-m.push(-2)
-m.push(0)
-m.push(-1)
-print(m.getMin())
-print(m.getMin())
-print(m.getMin())
-print(m.top())
