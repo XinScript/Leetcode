@@ -23,4 +23,3 @@ class Solution(object):
 
         return obstacleGrid[m - 1][n - 1]
 
-print(Solution().uniquePathsWithObstacles([[0]]))
