@@ -20,6 +20,3 @@ class Solution(object):
             else:
                 i+=1
 
-a = [2,0,1]
-Solution().sortColors(a)
-print(a)
