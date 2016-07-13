@@ -27,5 +27,3 @@ var convert = function(s, numRows) {
 	}
 	return result.join('');
 };
-var r = convert('ABC',1);
-console.log(r);

@@ -20,5 +20,3 @@ var reverseVowels = function(s) {
 	}
 	return arr.join('');
 };
-var r = reverseVowels('leetcode');
-console.log(r);
