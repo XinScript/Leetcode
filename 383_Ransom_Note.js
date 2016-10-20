@@ -13,9 +13,4 @@ var canConstruct = function(ransomNote, magazine) {
 		if(s[ransomNote[j].charCodeAt(0)-97]<0) return false;
 	}
 	return true;
-
-
 };
-
-console.log(canConstruct('abba', 'bababa'));
-console.log('b'.charCodeAt(0));
