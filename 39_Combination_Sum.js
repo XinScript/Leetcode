@@ -25,6 +25,3 @@ var combinationSum = function(candidates, target) {
 	}
 	return result;
 }
-
-var r = combinationSum([2, 3, 6, 7], 7);
-console.log(r)
