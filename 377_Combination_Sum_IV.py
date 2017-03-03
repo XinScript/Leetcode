@@ -5,11 +5,11 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        arr = {0:1}
+        arr = [1]
         for i in range(1,target+1):
+            s = 0
             for num in nums:
                 if i - num >= 0:
-                    arr[i] = arr.setdefault(i,0) + arr.setdefault(i-num,0)
-        return arr.setdefault(target,0)
-        
-print(Solution().combinationSum4([1,2,3],3))
+                    s+=arr[i-num]
+            arr.append(s)
+        return arr[target]
