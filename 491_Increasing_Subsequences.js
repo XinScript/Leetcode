@@ -47,5 +47,3 @@ var calculate = function(s) {
 	}
 	return parseInt(s2.pop());
 };
-console.log(calculate('1*2-16/4+5*5-7*8+9'));
-// '1*2-16/4+5*5-7*8+9'
