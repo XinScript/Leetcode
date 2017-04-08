@@ -41,9 +41,12 @@ var calculate = function(s) {
 			temp+=s[i];
 		}
 	}
+	// console.log(s1);
+	// console.log(s2);
 	s2.push(temp);
 	while (s1.length) {
 		cal();
 	}
 	return parseInt(s2.pop());
 };
+console.log(1/2)
